@@ -23,7 +23,3 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     show-sql: true
-
-mybatis:
-  mapper-locations: classpath:cn/zhangxd/svca/mapper/*.xml
-  type-aliaess-package: cn.zhang.svca.pojo
