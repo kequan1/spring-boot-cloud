@@ -28,6 +28,11 @@ spring:
       enabled: false
     scheduled:
       skip-pattern: "^org.*HystrixStreamTask$"
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
 
 authserver:
     hostname: auth-service
@@ -38,10 +43,3 @@ security:
   oauth2:
     resource:
       user-info-uri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/current
-      
-spring:
-  datasource:
-    username: root
-    password: root
-    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
-    driver-class-name: com.mysql.jdbc.Driver
