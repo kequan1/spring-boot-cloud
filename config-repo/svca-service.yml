@@ -23,4 +23,4 @@ security:
 
 mybatis:
   mapper-locations: classpath:cn/zhangxd/svca/mapper/*.xml
-  type-aliaess-package: cn.zhang.svca.pojo
+  type-aliaess-package: cn.zhangxd.svca.pojo
