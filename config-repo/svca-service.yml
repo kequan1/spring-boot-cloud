@@ -20,15 +20,3 @@ security:
       accessTokenUri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/oauth/token
       grant-type: client_credentials
       scope: server
-  
-spring:
-  datasource:
-    username: admin
-    password: admin
-    url: jdbc:mysql://47.98.246.253:3306/crc?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.jdbc.Driver
-
-mybatis:
-  mapper-locations: classpath:cn/zhangxd/svca/mapper/*.xml
-  type-aliaess-package: cn.zhang.svca.pojo
